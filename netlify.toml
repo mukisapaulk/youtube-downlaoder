@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  node_version = "18"
+
+[[plugins]]
+  package = "@netlify/plugin-run-shell-script"
+  inputs = {
+    build_command = "sudo apt-get install -y yt-dlp"
+  }
+  
